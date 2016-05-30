@@ -31,5 +31,5 @@ public abstract class AbstractConversorCamelCase implements ConversorCamelCase {
 		return original.matches(REGEX_LETRAS_NUMEROS);
 	}
 	
-	public abstract List<String> aplicaLogicaConversorCamelCase(String original);
+	public abstract List<String> aplicaLogicaConversorCamelCase(String original_1);
 }
