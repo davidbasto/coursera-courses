@@ -1,0 +1,2 @@
+
+david|estrela|STRING_NAO_EH_PONTO_CAUSA_ERRO
