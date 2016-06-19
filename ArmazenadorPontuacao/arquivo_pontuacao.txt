@@ -1,2 +1,12 @@
+david|estrela|10
+joao|estrela|20
+maria|estrela|10
+david|moeda|10
+maria|moeda|20
+joao|topico|10
+david|estrela|30
+david|estrela|10
+joao|moeda|30
+joao|topico|30
 
-david|estrela|STRING_NAO_EH_PONTO_CAUSA_ERRO
+david|estrela|15

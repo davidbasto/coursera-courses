@@ -34,7 +34,7 @@ public class ArmazenadorEmArquivoTest {
 	}
 	
 	@Test
-	public void armazenaPontosDeUmUsuario() {
+	public void armazenaPontosDeUmUsuarioTest() {
 		criaArmazenamento();
 		
 		String usuario = "david";
@@ -47,7 +47,7 @@ public class ArmazenadorEmArquivoTest {
 	}
 	
 	@Test
-	public void armazenaPontosDeMaisDeUmUsuario() {
+	public void armazenaPontosDeMaisDeUmUsuarioTest() {
 		criaArmazenamento();
 		
 		String usuario1 = "david";
@@ -68,7 +68,7 @@ public class ArmazenadorEmArquivoTest {
 	}
 	
 	@Test
-	public void recuperaTiposDiferentesPontosMesmoUsuario() {
+	public void recuperaTiposDiferentesPontosMesmoUsuarioTest() {
 		criaEPopulaArmazenamento();
 		
 		assertEquals(30, armazenamento.recuperaPontuacaoDeUsuario("david", "estrela").intValue());
@@ -77,7 +77,7 @@ public class ArmazenadorEmArquivoTest {
 	}
 
 	@Test
-	public void recuperaTiposDiferentesPontosUsuariosDiferentes() {
+	public void recuperaTiposDiferentesPontosUsuariosDiferentesTest() {
 		criaEPopulaArmazenamento();
 
 		assertEquals(30, armazenamento.recuperaPontuacaoDeUsuario("david", "estrela").intValue());
