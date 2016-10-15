@@ -5,8 +5,6 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.TreeMap;
 
-import br.com.courseracourse.tradutor.exception.TraducaoNaoEncontradaException;
-
 public class DicionarioTraducoes {
 
 	private Map<String, String> verbetes = new TreeMap<>((s1, s2) -> s1.compareToIgnoreCase(s2));
@@ -18,11 +16,10 @@ public class DicionarioTraducoes {
 		verbetes.put(palavra, traducao);
 	}
 
-	public String recuperaTraducao(String palavra) throws TraducaoNaoEncontradaException {
+	public String recuperaTraducao(String palavra)  {
 		Objects.requireNonNull(palavra, "Palavra não pode ser nula");
-		// Retorna a tradução da palavra armazenada no Map ou lança a exceção se
-		// não encontrar.
-		return Optional.ofNullable(verbetes.get(palavra)).orElseThrow(TraducaoNaoEncontradaException::new);
+		// Retorna a tradução da palavra armazenada no Map ou retorna a própria palavra, caso não encontre.
+		return Optional.ofNullable(verbetes.get(palavra)).orElse(palavra);
 	}
 	
 	public Boolean possuiTraducao(String palavra) {

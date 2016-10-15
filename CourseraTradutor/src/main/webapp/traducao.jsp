@@ -8,6 +8,6 @@
 <title>Tradução</title>
 </head>
 <body>
-	<h1>A tradução para a palavra ${param.palavra} é ${palavraTraduzida}</h1>
+	<h1 id="traducao">A tradução para a palavra ${param.palavra} é ${palavraTraduzida}</h1>
 </body>
 </html>

@@ -24,7 +24,6 @@ public class TraduzirPalavraServlet extends HttpServlet {
      */
     public TraduzirPalavraServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -35,18 +34,12 @@ public class TraduzirPalavraServlet extends HttpServlet {
 		String palavra = request.getParameter("palavra");
 		
 		String palavraTraduzida = "";
-		
+
 		if(palavra != null) {
-		DicionarioTraducoes dicionario = (DicionarioTraducoes) getServletContext().getAttribute("dicionario");
-			
-			try{
-				palavraTraduzida = dicionario.recuperaTraducao(palavra);
-			}
-			catch (TraducaoNaoEncontradaException e) {
-				request.getRequestDispatcher("erroTraducao.jsp").forward(request, response);
-				
-				return;
-			}
+			DicionarioTraducoes dicionario = (DicionarioTraducoes) getServletContext().getAttribute("dicionario");
+
+			palavraTraduzida = dicionario.recuperaTraducao(palavra);
+
 			request.setAttribute("palavraTraduzida", palavraTraduzida);
 			request.getRequestDispatcher("traducao.jsp").forward(request, response);
 		}

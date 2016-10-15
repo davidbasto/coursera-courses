@@ -43,12 +43,12 @@ public class DicionarioTraducoesTest {
 		assertEquals(traducao, dicionario.recuperaTraducao(palavra));
 	}
 	
-	@Test(expected=TraducaoNaoEncontradaException.class)
-	public void testaLancaExcecaoVerbeteInesistente() {
+	@Test
+	public void testaVerbeteNaoEncontrado() {
 		String palavra = "Macaco";
 		
 		assertFalse(dicionario.possuiTraducao(palavra));
-		dicionario.recuperaTraducao(palavra);
+		assertEquals(palavra, dicionario.recuperaTraducao(palavra));
 	}
 	
 	@Test
