@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>br.com.courseracourse.forum.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CadastroServlet</servlet-name>
+  	<display-name>CadastroServlet</display-name>
+  	<description></description>
+  	<servlet-class>br.com.courseracourse.forum.web.CadastroServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TopicoServlet</servlet-name>
+  	<display-name>TopicoServlet</display-name>
+  	<description></description>
+  	<servlet-class>br.com.courseracourse.forum.web.TopicoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ExibeTopicoServlet</servlet-name>
+  	<display-name>ExibeTopicoServlet</display-name>
+  	<description></description>
+  	<servlet-class>br.com.courseracourse.forum.web.ExibeTopicoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InsereTopicoServlet</servlet-name>
+  	<display-name>InsereTopicoServlet</display-name>
+  	<description></description>
+  	<servlet-class>br.com.courseracourse.forum.web.InsereTopicoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RankingServlet</servlet-name>
+  	<display-name>RankingServlet</display-name>
+  	<description></description>
+  	<servlet-class>br.com.courseracourse.forum.web.RankingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CadastroServlet</servlet-name>
+  	<url-pattern>/CadastroServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TopicoServlet</servlet-name>
+  	<url-pattern>/TopicoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ExibeTopicoServlet</servlet-name>
+  	<url-pattern>/ExibeTopicoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InsereTopicoServlet</servlet-name>
+  	<url-pattern>/InsereTopicoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RankingServlet</servlet-name>
+  	<url-pattern>/RankingServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

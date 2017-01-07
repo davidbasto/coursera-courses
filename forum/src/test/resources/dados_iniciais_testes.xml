@@ -1,0 +1,16 @@
+<dataset>
+	<USUARIO LOGIN="fulanosilva" NOME="Fulano da Silva" EMAIL="fulanosilva@gmail.com" SENHA="123" PONTOS="100" />
+	<USUARIO LOGIN="maria" NOME="Maria Tereza" EMAIL="mt@gmail.com" SENHA="567" PONTOS="200"  />
+	<USUARIO LOGIN="pedropaulo" NOME="Pedro Paulo" EMAIL="pedropaulo@gmail.com" SENHA="67890" PONTOS="140"  />
+	<USUARIO LOGIN="joaojose" NOME="Joao Jose" EMAIL="joaojose@gmail.com" SENHA="123456" PONTOS="150" />
+	
+	<TOPICO ID_TOPICO="1" LOGIN="fulanosilva" TITULO="TOPICO 1" CONTEUDO="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum pretium odio posuere." />
+	<TOPICO ID_TOPICO="2" LOGIN="fulanosilva" TITULO="TOPICO 2" CONTEUDO="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tempus ipsum. Maecenas metus nullam." />
+	
+	<TOPICO ID_TOPICO="3" LOGIN="joaojose" TITULO="TOPICO 3 DO JOAO JOSE" CONTEUDO="JOAO JOSE - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum pretium odio posuere." />
+	<TOPICO ID_TOPICO="4" LOGIN="pedropaulo" TITULO="TOPICO 4  DO PEDRO PAULO" CONTEUDO="PEDRO PAULO - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tempus ipsum. Maecenas metus nullam." />
+	
+	<COMENTARIO ID_COMENTARIO="1" LOGIN="joaojose" ID_TOPICO="1" COMENTARIO="Comentário no TOPICO 1 do usuário joaojose" />
+	<COMENTARIO ID_COMENTARIO="2" LOGIN="joaojose" ID_TOPICO="1" COMENTARIO="Outro Comentário no TOPICO 1 do usuário joaojose" />
+	<COMENTARIO ID_COMENTARIO="3" LOGIN="maria" ID_TOPICO="1" COMENTARIO="Comentário no TOPICO 1 do usuário maria" />
+</dataset>
